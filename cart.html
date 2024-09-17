@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Southside Purwokerto - Keranjang Belanja</title>
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="Raffy.png" alt="Southside Purwokerto Logo">
+        </div>
+        <nav>
+            <ul>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        
+                    </ul>
+                </nav>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="shop" class="products">
+        <h2>Featured Products</h2>
+        <div class="product-list">
+            <div class="product" data-name="Velg Vrossi sanca" data-price="1200000">
+                <img src="th.jpeg" alt="Velg Vrossi sanca">
+                <h3>Velg Vrossi sanca</h3>
+                <p>Rp 1.200.000</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="product" data-name="Knalpot Copy Cms" data-price="500000">
+                <img src="tn.jpeg" alt="Knalpot Copy Cms">
+                <h3>Knalpot Copy Cms</h3>
+                <p>Rp 500.000</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="cart">
+        <h2>Keranjang Belanja</h2>
+        <div class="cart-list">
+            <p id="empty-cart-message">Keranjang Anda masih kosong.</p>
+            <ul id="cart-items"></ul>
+            <div class="total">
+                <p>Total Keseluruhan: <span id="total-price">Rp 0</span></p>
+            </div>
+            <button id="checkout-btn" disabled>Checkout</button>
+        </div>
+    </section>
+
+    <script src="cart.js"></script>
+</body>
+</html>
